@@ -49,7 +49,7 @@ function init_score() {
                     // 时间
                     str += '<th width="8%">' + score[i].t + '</th>';
                     // 状态
-                    str += '<th width="6%"><span>' + timespace(score[i].t) + '</span><img src="statics/images/in.gif" border="0"></th>';
+                    str += '<th width="6%"><span>' + timespace(score[i].t) + '</span><img src="images/in.gif" border="0"></th>';
                     //比赛球队
                     str += '<th width="14%">' + score[i].s[1] + '</th>';
 
@@ -84,7 +84,7 @@ function init_score() {
                     // 推荐
                     var hot = true;
                     if (hot)
-                        str += '<th width="6%"><span><img src="statics/images/hot.gif" border="0"></span></th>';
+                        str += '<th width="6%"><span><img src="images/hot.gif" border="0"></span></th>';
                     else
                         str += '<th width="6%"></th>';
                     str += '</tr>'
