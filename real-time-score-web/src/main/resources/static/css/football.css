@@ -1,0 +1,204 @@
+/*通用样式*/
+*{margin:0;padding: 0}
+.left{float: left}
+.right{float: right}
+.clear{clear: both}
+body{position: relative;background: #fff;font-family: "Helvetica Neue", "Microsoft YaHei", Helvetica, Tahoma, sans-serif;}
+.shadow{box-shadow: 0 2px 5px rgba(0,0,0,0.18);width: 100%; position: relative;}
+.wp{width: 1080px;margin: 0 auto; position: relative;}
+
+/*头部菜单*/
+.header{
+    min-width: 1080px;
+    width: 100%;
+    position: relative;
+    /*background: #2a71cb;*/
+    background-color: #507D25;
+    height: 40px;
+}
+.header_nav {
+    width: 100%;
+    position: relative;
+}
+
+.header>.wp>.header_nav>.theme {
+    font-size: 20px;
+    color: #fff;
+    width: 160px;
+    line-height: 40px;
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+.user,.login,.registr{
+    display: inline-block;
+    position: relative;
+}
+.user > span {
+    color: #fff;
+    top: 3px;
+}
+.header>.wp>.header_nav>.right_op{
+    position: relative;
+    top: 8px;
+}
+.header>.wp>.header_nav>.right_op button {
+    padding: 2px 12px;
+    border-radius: unset;
+    border: none;
+    margin-left: 5px;
+}
+
+/*banner*/
+.app-banner {
+    clear: both;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.app-banner:after, .app-banner:before {
+    content: '';
+    display: table;
+}
+.w-bar-100 {
+    width: 100%;
+}
+.app-banner img {
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -o-transition: 3s;
+}
+.app-banner img:hover{
+    transform: scale(1.1);
+}
+
+/*内容部分*/
+.content {
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 #dcdcdc;
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+/*筛选部分*/
+.screen{
+    background-image: linear-gradient(-180deg,#fefefe 0,#f5f5f5 100%);
+    font-size: 18px;
+    color: #333;
+    height: 44px;
+    text-align: left;
+    padding: 8px 20px 6px 20px;
+    line-height: 44px;
+    display: block;
+    border-top: 1px solid #dcdcdc;
+}
+
+.screen_left {
+    height: 26px;
+}
+
+.screen .display_all,.screen .retain_select,.screen .hide_select,.screen .dynamic_number{
+    display: inline-block;
+    position: relative;
+}
+
+.screen button {
+    width: 80px;
+    height: 28px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: unset;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 0;
+}
+
+.screen .dynamic_number {
+    font-size: 14px;
+    color: #666;
+    line-height: 14px;
+    bottom: 6px;
+    margin-left: 20px;
+}
+
+.screen .dynamic_number>span{
+    color: #e34444;
+}
+
+
+
+/*list*/
+.thead-item .table{
+    margin: 0;
+    background: #f2f4f7;
+}
+
+.table th{
+    text-align: center;
+}
+
+.tbody-item>table>tbody>tr>th:nth-child(2){
+
+}
+.tbody-item>table>tbody>tr>th:nth-child(4),.tbody-item>.wp>table>tbody>tr>th:nth-child(8){
+    color: red;
+}
+.tbody-item>table>tbody>tr>th:nth-child(6),.tbody-item>.wp>table>tbody>tr>th:nth-child(9){
+    color: rgb(0,0, 255);
+}
+
+.tbody-item>table>tbody>tr>th:nth-child(10){
+    color: rgb(0,255,0);
+}
+
+#list{
+    font-size: 10px;
+}
+
+
+.data-null {
+    font-size: 18px;
+    text-align: center;
+    color: #bababa;
+    margin: 90px 0 95px;
+}
+
+.tob_thead{
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+/*鼠标滑过显示比分*/
+.score{
+    cursor: pointer;
+    position: relative;
+}
+
+.score_table {
+    width: 380px;
+    position: absolute;
+    left: -165px;
+    top: 36px;
+    display: none;
+    border:solid 1px #666;
+    z-index: 1006;
+}
+
+.score:hover .score_table{
+    display: block;
+}

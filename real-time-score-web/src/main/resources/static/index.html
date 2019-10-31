@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>足坛风云</title>
+    <link rel="shortcut icon" href="images/football.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/football.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="layui-v2.3.0/css/layui.css"  media="all">
+</head>
+<body>
+    <div>
+        <!--头部菜单栏-->
+        <div class="header" >
+            <!--居中-->
+            <div class="wp">
+                <div class="header_nav">
+                    <!--主题-->
+                    <div class="theme">足坛风云</div>
+
+                    <!--用户部分-->
+                    <div class="right_op right">
+                        <div class="user">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <!--登录按钮-->
+                        <div class="login">
+                            <button type="button" class="btn btn-default" id="login">登录</button>
+                        </div>
+                        <!--注册按钮-->
+                        <div class="registr">
+                            <button type="button" class="btn btn-success" id="registr">注册</button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <!--banner-->
+        <div class="banner">
+            <!--居中-->
+            <div class="wp">
+                <a href="" class="app-banner">
+                    <img src="images/banner.back.png" alt="比分动画直播，最全赛事指数和赛事分析" class="w-bar-100">
+                </a>
+            </div>
+        </div>
+
+        <div class="wp">
+            <div class="content">
+                <!--筛选-->
+                <div class="screen">
+                    <!--左侧筛选-->
+                    <!--<div class="screen_left">
+
+                    </div>-->
+                    <!--显示全部-->
+                    <div class="display_all">
+                        <button type="button" class="btn btn-default" id="display_all">保留全部</button>
+                    </div>
+                    <!--保留选中-->
+                    <div class="retain_select">
+                        <button type="button" class="btn btn-default" id="retain_select">保留选中</button>
+                    </div>
+                    <!--隐藏选中-->
+                    <div class="hide_select">
+                        <button type="button" class="btn btn-default" id="hide_select">隐藏选中</button>
+                    </div>
+                    <!--动态数字-->
+                    <div class="dynamic_number">
+                        共<span class="total_count">100</span>场， 隐藏<span class="hide_count">0</span>场
+                    </div>
+                </div>
+
+                <!--排行榜列表-->
+                <div class="ranking">
+                    <div class="thead-item">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th class="lab-check" width="2%">
+                                        <form class="layui-form" action="">
+                                            <input type="checkbox" class="checkboxAll" lay-filter="allChoose" lay-skin="primary">
+                                        </form>
+                                    </th>
+                                    <th width="9%">赛事</th>
+                                    <th width="8%">时间</th>
+                                    <th width="6%">状态</th>
+                                    <th width="14%">比赛球队</th>
+                                    <th width="6%">比分</th>
+                                    <th width="14%">比赛球队</th>
+                                    <th width="6%">半场</th>
+                                    <th width="6%">推荐</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--居中-->
+                    <div class="tbody-item" id="list-panel">
+                        <table id="list" class="table table-hover">
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <div class="data-null hide">暂无数据，敬请期待！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tob_thead shadow hide">
+            <div class="wp">
+                <div class="thead-item">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <th class="lab-check" width="2%">
+                                <form class="layui-form" action="">
+                                    <input type="checkbox" class="checkboxAll" lay-filter="allChoose" lay-skin="primary">
+                                </form>
+                            </th>
+                            <th width="9%">赛事</th>
+                            <th width="8%">时间</th>
+                            <th width="6%">状态</th>
+                            <th width="14%">比赛球队</th>
+                            <th width="6%">比分</th>
+                            <th width="14%">比赛球队</th>
+                            <th width="6%">半场</th>
+                            <th width="6%">推荐</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--底部-->
+        <div class="footter">
+            <div class="wp">
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="jquery/js/jQuery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="layui-v2.3.0/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/Common.js"></script>
+    <script type="text/javascript" src="jquery/js/json2.js"></script>
+    <script type="text/javascript" src="jquery/js/jquery.alerts.js"></script>
+    <script type="text/javascript" src="js/score.js"></script>
+    <script type="text/javascript" src="js/football.js"></script>
+</body>
+</html>
