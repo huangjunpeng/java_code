@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class Application {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationcontex.xml");
         User user = (User)ac.getBean("user");
         System.out.println(user);
@@ -26,7 +26,7 @@ public class Application {
             System.out.println(user4);
         }
     }
-
+*/
     @Test
     public void Test1() {
         System.out.println(1);
