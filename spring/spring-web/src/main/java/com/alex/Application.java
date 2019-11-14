@@ -1,6 +1,7 @@
 package com.alex;
 
 import com.alex.domain.User;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -24,5 +25,10 @@ public class Application {
             User user4 = (User)ac.getBean("user4");
             System.out.println(user4);
         }
+    }
+
+    @Test
+    public void Test1() {
+        System.out.println(1);
     }
 }
