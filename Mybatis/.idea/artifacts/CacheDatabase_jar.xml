@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CacheDatabase:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CacheDatabase_jar</output-path>
+    <root id="archive" name="CacheDatabase.jar">
+      <element id="module-output" name="CacheDatabase" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/CacheDatabase/lib/cache-db-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/CacheDatabase/lib/cache-enslib-jms-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/CacheDatabase/lib/cache-extreme-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/CacheDatabase/lib/cache-gateway-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/CacheDatabase/lib/cache-jdbc-2.0.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
