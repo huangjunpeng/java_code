@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="cache-db-2.0.0 (2)">
+    <CLASSES>
+      <root url="jar://F:/BaiduNetdiskDownload/12-mybatis框架（第72-73天）/mybatis_day01/mybatis/01.参考资料/逆向工程/generatorSqlmapCustom/lib/cache-db-2.0.0.jar!/" />
+      <root url="jar://F:/BaiduNetdiskDownload/12-mybatis框架（第72-73天）/mybatis_day01/mybatis/01.参考资料/逆向工程/generatorSqlmapCustom/lib/cache-enslib-jms-2.0.0.jar!/" />
+      <root url="jar://F:/BaiduNetdiskDownload/12-mybatis框架（第72-73天）/mybatis_day01/mybatis/01.参考资料/逆向工程/generatorSqlmapCustom/lib/cache-extreme-2.0.0.jar!/" />
+      <root url="jar://F:/BaiduNetdiskDownload/12-mybatis框架（第72-73天）/mybatis_day01/mybatis/01.参考资料/逆向工程/generatorSqlmapCustom/lib/cache-gateway-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
