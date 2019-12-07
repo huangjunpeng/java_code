@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -56,5 +57,23 @@ public class CustomerController {
 
 
         return "customer";
+    }
+
+
+    @RequestMapping(value = "edit.action")
+    public @ResponseBody Customer edit(Integer id) {
+        return customerService.selectCustomerById(id);
+    }
+
+    @RequestMapping(value = "update.action")
+    public @ResponseBody String update(Customer customer) {
+        customerService.updateCustomerById(customer);
+        return "OK";
+    }
+
+    @RequestMapping(value = "delete.action")
+    public @ResponseBody String delete(@RequestParam(value = "id") Integer cust_id) {
+        customerService.deleteCustomerById(cust_id);
+        return "OK";
     }
 }

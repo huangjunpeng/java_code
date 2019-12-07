@@ -43,4 +43,15 @@ public class CustomerServiceImpl implements CustomerService {
 
         return page;
     }
+
+    public Customer selectCustomerById(Integer id) {
+        return customerMapper.selectCustomerById(id);
+    }
+    public void updateCustomerById(Customer customer) {
+        customerMapper.updateCustomerById(customer);
+    }
+
+    public void deleteCustomerById(Integer id) {
+        customerMapper.deleteCustomerById(id);
+    }
 }
